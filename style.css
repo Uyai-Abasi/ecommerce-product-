@@ -1,0 +1,477 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;  
+  text-decoration: none;
+  box-sizing: border-box;
+
+}
+.navbar{
+    border:  dotted white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 80px;
+    box-shadow: 0 0.5px gray;
+    width: 75%;
+    margin: auto;
+
+}
+.navbar-links{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+
+}
+.brand a{
+    font-size: 30px;
+    margin: 0.5rem;
+    color:black;
+    font-weight: bolder;
+}
+
+
+.navbar-links ul{
+    display:flex;
+    margin: 0;
+    padding: 0;
+
+}
+.navbar-links li a{
+    color: gray;
+    padding: 1rem;
+
+}
+.navbar-links li:hover{
+    background-color: turquoise;
+}
+
+.image{
+display: flex;
+align-items: center;
+}
+
+.image a{
+    margin-right: 30px;
+}
+.toggle-button{
+    position: relative;
+    top:2rem;
+    right:rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+
+
+.toggle-button .bar{
+    height: 5px;
+    width:100;
+    background-color: gray;
+    border-radius: 10px;
+}
+.card{
+
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    align-items: center;
+    
+}
+
+.sample img{
+    width:500px ;
+    border-radius: 10px;
+}
+
+.carousel{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.carousel img{
+    width: 100px;
+}
+
+.carousel img:hover{
+border: solid red;
+    opacity: 0.5;
+  
+}
+  
+.company{
+   
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+h6{
+    color:  orange;
+}
+h1{
+    /* width: 20vw; */
+margin: 20px 0;
+}
+p{
+    color: gray;
+/* width:60%; */
+}
+.items{
+    margin: 10px 0px;  
+}
+.price{
+    width: 8.5rem;
+    display:  flex;
+    justify-content: space-between;
+}
+h2{
+    color:  black;
+}
+h3{
+    color: orange;
+    background-color: lavenderblush;
+    
+}
+h4{
+    color: gray;
+    text-decoration: line-through;
+}
+
+
+.buttons{
+    display: flex;
+}
+
+.cart_button{
+    margin-left: 1rem;
+    width: 12rem;
+    box-shadow: 0px 30px 25px rgba(255, 194, 204, .3);
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+}
+.cart_button span{
+    margin-left: .5rem;
+}
+.cart_button img{
+    width: 14px;
+
+}
+.button_container{
+    height: 5vh;
+    display: flex;
+
+}
+.button_container div{
+    display: flex;
+    align-items: center;
+    background-color: rgb(223, 215, 215);
+}
+
+.button_container div,.button_container button{
+    font-size: 1.5rem;
+    
+}
+
+.button_container button{
+    background-color: rgb(223, 215, 215);
+    color: orange;
+    border: none;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.button_container button:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.button_container button:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+@media (max-width:1000px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: flex;
+        flex-direction: row-reverse;
+    
+    }
+    
+.navbar ul{
+    display: none;
+}
+.navbar{
+    width: 100%;
+    border:  solid magenta;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 80px;
+    box-shadow: none;
+   
+
+}
+.image{
+    
+    display: flex;
+    align-items: center;
+    }
+.card{
+    border: solid red;
+    width :100%;
+    display: block;
+    margin:0;
+
+}
+.sample img{
+    width: 100%;
+    border-radius: 0;
+}
+.carousel{
+    display: none;
+
+}
+
+.company{
+    padding: 0;
+    margin:20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 100%;
+}
+h6{
+width: 65%;
+}
+
+h1{
+    width: 65%;
+    margin: 15px 0;
+}
+
+p{
+    color: gray;
+width:65%;
+font-size: 20px;
+text-align: justify;
+}
+.items{
+    /* border:  dotted seagreen; */
+    margin:15px 0;
+    display: flex;
+justify-content: space-between;
+width:65%;
+
+  
+}
+.price{
+
+    display:  flex;
+    justify-content: space-between;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+width: 65%;
+}
+
+
+.cart_button{
+    /* border: solid rebeccapurple; */
+    margin: 10px 0;
+width: 100%;
+    box-shadow: 0px 30px 25px rgba(255, 194, 204, .3);
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    height: 5vh;
+}
+.cart_button span{
+    margin-left: .5rem;
+}
+.cart_button img{
+    width: 14px;
+
+}
+.button_container{
+
+    height: 5vh;
+    display: flex;
+}
+
+.button_container button{
+    background-color: rgb(223, 215, 215);
+    color: orange;
+    border: none;
+    width: 65%;
+    cursor: pointer;
+}
+
+.image{
+    margin-right:0;
+    
+    }
+}
+@media only screen and (min-width: 750px) and (max-width: 1440px){
+     body{
+        padding: 0;
+        margin: 0;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: flex;
+        flex-direction: row-reverse;
+    
+    }
+    
+.navbar ul{
+    display: none;
+}
+.navbar{
+    width: 100%;
+    border:  solid magenta;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 80px;
+    box-shadow: none;
+}
+.image{
+    display: flex;
+    align-items: center;
+    }
+.card{
+    border: solid red;
+    width :100%;
+    display: block;
+    margin:0;
+    
+}
+.sample img{
+    width: 100%;
+    border-radius: 0;
+}
+.carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.carousel img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.carousel img:hover{
+    opacity: 0.5;
+    border: solid red;
+}
+.company{
+    padding: 0;
+    margin:20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 100%;
+}
+h6{
+width: 65%;
+}
+
+h1{
+    width: 65%;
+    margin: 15px 0;
+}
+
+p{
+    color: gray;
+width:65%;
+font-size: 20px;
+text-align: justify;
+}
+.items{
+    margin:15px 0;
+    display: flex;
+justify-content: space-between;
+width:65%;
+
+  
+}
+.price{
+
+    display:  flex;
+    justify-content: space-between;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+width: 65%;
+}
+
+
+.cart_button{
+    margin: 10px 0;
+width: 100%;
+    box-shadow: 0px 30px 25px rgba(255, 194, 204, .3);
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    height: 5vh;
+}
+.cart_button span{
+    margin-left: .5rem;
+}
+.cart_button img{
+    width: 14px;
+
+}
+.button_container{
+
+    height: 5vh;
+    display: flex;
+}
+
+.button_container button{
+    background-color: rgb(223, 215, 215);
+    color: orange;
+    border: none;
+    width: 65%;
+    cursor: pointer;
+}
+
+.image{
+    margin-right:0;
+    
+    }
+}
